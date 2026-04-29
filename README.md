@@ -152,30 +152,6 @@ the need to configure anything else. You just have to follow the steps below:
 7. If you need help, you can ask in the [ZMK Discord]
 8. Enjoy your new keyboard
 
-Here you can see the visual changes to the configuration:
-> [!NOTE]
->
-> This .svg image is automatically generated every time a change is made with
-> the keymap editor. Github's workflows are responsible for building and
-> generating the .svg file. You just have to go to the
-> [keymap-drawer](./keymap-drawer)  folder and open the .svg file with your
-> preferred browser if you want to see the files. The keymap-drawer
-> configuration file is located in
-> [config](./config/config_keymap-drawer.yaml).
-> The file for the workflows is in [workflows](./.github/workflows/keymap-drawer.yaml) in case you want to modify it.
-
-## keymap corne
-[![keymap-drawer-demo-corne](keymap-drawer/corne.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap sofle
-[![keymap-drawer-demo-sofle](keymap-drawer/sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap splitkb_aurora_sofle
-[![keymap-drawer-demo-splitkb_aurora_sofle](keymap-drawer/splitkb_aurora_sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap lily58
-[![keymap-drawer-demo-lily58](keymap-drawer/lily58.svg)](https://www.youtube.com/c/mctechnology17)
-
-If you want to customize this image with shapes/colors/etc. You can see these references:
-[^1] [^2] [^3]
-
 
 # LOCAL INSTALLATION
 Before making any modifications, please see the [ZMK documentation]
