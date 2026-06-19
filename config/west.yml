@@ -9,6 +9,10 @@ manifest:
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
   projects:
+    # Pinned to v0.3.0 instead of `main`: ZMK main tracks Zephyr 4.1, whose
+    # board-model rewrite renamed `nice_nano_v2` (now `nice_nano//zmk`) and
+    # split the `WS2812_STRIP` Kconfig symbol per-driver. Bumping this back to
+    # `main` will break every build.yaml entry below until those are updated.
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
