@@ -61,11 +61,11 @@ zmk-config
 
 ## Keyboards
 
-| Keyboard | Shields                  | Display    | RGB | Notes |
-|----------|---------------------------|------------|-----|-------|
-| Corne    | `corne_left`, `corne_right` | nice!oled  | yes | |
-| Lily58   | `lily58_left`, `lily58_right` | nice!oled  | no  | encoders supported in `lily58.dtsi`, not wired up in the default keymap |
-| Sofle    | `sofle_left`, `sofle_right` | nice!oled  | yes | encoders supported |
+| Keyboard | Shields                  | Display       | RGB | Notes |
+|----------|---------------------------|---------------|-----|-------|
+| Corne    | `corne_left`, `corne_right` | 128x32 OLED | yes | |
+| Lily58   | `lily58_left`, `lily58_right` | 128x32 OLED | no  | encoders supported in `lily58.dtsi`, not wired up in the default keymap |
+| Sofle    | `sofle_left`, `sofle_right` | 128x32 OLED | yes | encoders supported |
 | Sweep    | `sweep_left`, `sweep_right` | none       | no  | 34-key direct-pin board (same PCB as the upstream ZMK `cradio` shield) |
 
 Each keyboard's keymap lives at `config/<keyboard>.keymap`, with diagrams auto-generated to `keymap-drawer/<keyboard>.svg` on every push that touches a `.keymap` file (see [.github/workflows/keymap-drawer.yaml](./.github/workflows/keymap-drawer.yaml)). Sweep doesn't have a diagram yet — its custom physical layout isn't recognized by the keymap-drawer auto-detection.
@@ -74,7 +74,7 @@ Each keyboard's keymap lives at `config/<keyboard>.keymap`, with diagrams auto-g
 
 ## Display
 
-Corne, Lily58, and Sofle use the [nice!oled] module (`zmk-nice-oled` in `config/west.yml`) for a 128x32 SSD1306 OLED on each half, enabled via the `nice_oled` shield in `build.yaml`. Sweep has no display.
+Corne, Lily58, and Sofle each use a standard 128x32 SSD1306 OLED per half, driven by the [zmk-nice-oled] module pulled in via `config/west.yml` and enabled with the `nice_oled` shield in `build.yaml`. Sweep has no display.
 
 ## RGB underglow
 
@@ -120,7 +120,6 @@ This config was originally based on [mctechnology17/zmk-config](https://github.c
 Keymap diagrams generated with [keymap-drawer](https://github.com/caksoylar/keymap-drawer).
 
 [keymap-editor]: https://nickcoutsos.github.io/keymap-editor/
-[nice!oled]: https://github.com/mctechnology17/zmk-nice-oled
 [zmk-nice-oled]: https://github.com/mctechnology17/zmk-nice-oled
 [zmk-dongle-display]: https://github.com/englmaxi/zmk-dongle-display
 [zmk-dongle-display-view]: https://github.com/mctechnology17/zmk-dongle-display-view
