@@ -81,13 +81,13 @@ include:
 
   ### SWEEP START ###
   - board: nice_nano_v2
-    shield: cradio_left
+    shield: sweep_left
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
     artifact-name: nice_sweep_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
-    shield: cradio_right
+    shield: sweep_right
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
     artifact-name: nice_sweep_right
 
