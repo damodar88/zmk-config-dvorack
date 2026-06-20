@@ -24,6 +24,11 @@ test/
 *.o
 *.out
 
+# firmware build output
+*.uf2
+*.hex
+*.bin
+
 # log
 *.log
 
