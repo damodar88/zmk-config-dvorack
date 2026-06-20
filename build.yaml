@@ -87,23 +87,23 @@ include:
   # Corne with OLED but NO RGB underglow
   - board: nice_nano_v2
     shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Test_OledOnly\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"CrnOledOnly\"
     artifact-name: nice_corne_left_test_oled_only
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
     shield: corne_right nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Test_OledOnly\" -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CAT=n -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_KM=y -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"CrnOledOnly\" -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CAT=n -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_KM=y -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
     artifact-name: nice_corne_right_test_oled_only
 
   # Corne with RGB underglow but NO OLED
   - board: nice_nano_v2
     shield: corne_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Test_RgbOnly\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"CrnRgbOnly\"
     artifact-name: nice_corne_left_test_rgb_only
     snippet: rgb-config studio-rpc-usb-uart
   - board: nice_nano_v2
     shield: corne_right
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Test_RgbOnly\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"CrnRgbOnly\"
     artifact-name: nice_corne_right_test_rgb_only
     snippet: rgb-config
 
@@ -111,7 +111,7 @@ include:
   # global/system thread and onto its own dedicated thread
   - board: nice_nano_v2
     shield: sofle_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sofle_Test_NoGlobalEnc\" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000 -DCONFIG_EC11_TRIGGER_GLOBAL_THREAD=n -DCONFIG_EC11_TRIGGER_OWN_THREAD=y
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"SflNoGlobEnc\" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000 -DCONFIG_EC11_TRIGGER_GLOBAL_THREAD=n -DCONFIG_EC11_TRIGGER_OWN_THREAD=y
     artifact-name: nice_sofle_left_test_no_global_enc
     snippet: rgb-config studio-rpc-usb-uart
   - board: nice_nano_v2
