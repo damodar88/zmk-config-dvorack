@@ -57,7 +57,7 @@ include:
   ### CORNE START ###
   - board: nice_nano_v2
     shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\" -DCONFIG_NICE_OLED_WIDGET_MODIFIERS_INDICATORS_FIXED=n
     artifact-name: nice_corne_left_oled_rgb
     snippet: rgb-config studio-rpc-usb-uart
     # nice_nano_v2 + nice_oled + RGB (RIGHT)
@@ -70,7 +70,7 @@ include:
   ### SOFLE START ###
   - board: nice_nano_v2
     shield: sofle_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sofle_Oled\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sofle_Oled\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000 -DCONFIG_NICE_OLED_WIDGET_MODIFIERS_INDICATORS_FIXED=n
     artifact-name: nice_sofle_left_rgb_oled
     snippet: rgb-config studio-rpc-usb-uart
   - board: nice_nano_v2
