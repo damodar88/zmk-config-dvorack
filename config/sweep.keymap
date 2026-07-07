@@ -169,15 +169,16 @@ name: name##_macro {                      \
 
         MACRO(object,
             &kp N &kp E &kp W &kp SPACE
-            &kp O &kp B &kp J &kp E &kp C &kp T
-            &kp M &kp A &kp P &kp P &kp E &kp R
+            &kp LS(O) &kp B &kp J &kp E &kp C &kp T
+            &kp LS(M) &kp A &kp P &kp P &kp E &kp R
             &kp LS(N9) &kp LS(N0)
             &kp DOT
             &kp W &kp R &kp I &kp T &kp E
-            &kp V &kp A &kp L &kp U &kp E
-            &kp A &kp S
-            &kp S &kp T &kp R &kp I &kp N &kp G
+            &kp LS(V) &kp A &kp L &kp U &kp E
+            &kp LS(A) &kp S
+            &kp LS(S) &kp T &kp R &kp I &kp N &kp G
             &kp LS(N9) &kp LS(N0)
+            &kp LEFT
         )
 
         MACRO(null_blank,
