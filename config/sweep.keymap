@@ -196,6 +196,9 @@ name: name##_macro {                      \
         MACRO(stop, &kp LG(F2))
         MACRO(debug_continue, &kp F8)
         MACRO(debu_resumen, &kp LG(LA(R)))
+        MACRO(copilot_chat, &kp LC(LS(C)))
+        MACRO(bookmarks, &kp LG(N2))
+        MACRO(javadoc, &kp LG(LA(J)))
     };
 };
 
@@ -258,10 +261,10 @@ name: name##_macro {                      \
             &kp N1      &kp N3     &kp N5     &kp N7    &kp N9        &alt_cmd_r   &none      &none      &none     &class_hierarchy
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 2        │  4       │  6       │  8       │ 0        │   │          │          │          │          │          │
-            &kp N2      &kp N4     &kp N6     &kp N8    &kp N0         &kp F8     &cmd_lb    &none      &cmd_rb    &show_usages
+            &kp N2      &kp N4     &kp N6     &kp N8    &kp N0         &bookmarks  &cmd_lb    &none      &cmd_rb    &show_usages
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ALL      │  COPY    │  CUP     │ BACK     │ PASTE    |   │          │          │          │          │          │
-            &kp LG(A)   &kp LG(C)  &kp LG(X) &kp LG(Z)  &kp LG(V)      &none      &none      &none      &none      &generate_code
+            &kp LG(A)   &kp LG(C)  &kp LG(X) &kp LG(Z)  &kp LG(V)     &copilot_chat &none      &none      &none      &generate_code
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none       &none       &debug_continue &debu_resumen
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯  
@@ -287,7 +290,7 @@ name: name##_macro {                      \
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│    ;     │    :     │    ^     │                     │   │          │          │          │          │          │
-            &kp SEMI  &kp COLON   &kp CARET    &none    &screan      &kp K_VOL_UP &bt BT_SEL 0  &none     &none      &none 
+            &kp SEMI  &kp COLON   &kp CARET  &javadoc  &screan      &kp K_VOL_UP &bt BT_SEL 0  &none     &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //| =        | <        │ >        │  /       │ \        │   │          │          │          │          │          |
            &kp EQUAL   &kp LT     &kp GT     &kp FSLH  &kp BSLH       &kp K_MUTE  &bt BT_SEL 1 &none     &none      &none 
