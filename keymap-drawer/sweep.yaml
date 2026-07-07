@@ -77,8 +77,8 @@ layers:
   - '7'
   - '9'
   - '&gradle'
-  - ''
-  - ''
+  - '&object'
+  - '&null_blank'
   - ''
   - '&class_hierarchy'
   - '2'
@@ -97,7 +97,7 @@ layers:
   - Gui+Z
   - Gui+V
   - '&copilot_chat'
-  - ''
+  - '&p_view'
   - ''
   - ''
   - '&generate_code'
