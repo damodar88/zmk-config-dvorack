@@ -205,9 +205,9 @@ name: name##_macro {                      \
             &kp RBRC
         )
 
-        MACRO(search,       &kp LG(LS (F)))
-        MACRO(search_c,     &kp LG(LS (O)))
-        MACRO(junit_all,    &kp LC(LS (R)))
+        MACRO(search,       &kp LG(LS(F)))
+        MACRO(search_c,     &kp LG(LS(O)))
+        MACRO(junit_all,    &kp LC(LS(R)))
         MACRO(refactor,     &kp LS(F6))
         MACRO(duplicate,    &kp LG(D))
         MACRO(resume_debug, &kp LC(LA(R)))
@@ -223,8 +223,8 @@ name: name##_macro {                      \
         MACRO(cd,           &kp C &kp D &kp SPACE)
         MACRO(screan,       &kp LG(LS(N3)))
 
-        MACRO(cmd_lb, &kp LCMD &kp LBRC)  // Cmd + {
-        MACRO(cmd_rb, &kp LCMD &kp RBRC)  // Cmd + }
+        MACRO(cmd_lb, &kp LG(LBRC))
+        MACRO(cmd_rb, &kp LG(RBRC))
         MACRO(recent_files, &kp LG(LS(E)))
 
         MACRO(class_hierarchy, &kp LA(H)) 
@@ -238,11 +238,7 @@ name: name##_macro {                      \
         MACRO(bookmarks, &kp LG(N2))
         MACRO(javadoc, &kp LG(LA(J)))
         MACRO(gradle, &kp LC(Z))
-<<<<<<< HEAD
-        MACRO(p_view, &kp LG(N1)
-)
-=======
->>>>>>> 6589203741e6e5b48a30ed9d400cfd65b12255e4
+        MACRO(p_view, &kp LG(N1))
     };
 };
 
@@ -302,7 +298,6 @@ name: name##_macro {                      \
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ 1        │  3       │  5       │  7       │ 9        │   │          │          │          │          │          │
-<<<<<<< HEAD
             &kp N1      &kp N3     &kp N5     &kp N7    &kp N9        &gradle     &object    &null_blank &none     &class_hierarchy
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 2        │  4       │  6       │  8       │ 0        │   │          │          │          │          │          │
@@ -310,15 +305,6 @@ name: name##_macro {                      \
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ALL      │  COPY    │  CUP     │ BACK     │ PASTE    |   │          │          │          │          │          │
             &kp LG(A)   &kp LG(C)  &kp LG(X) &kp LG(Z)  &kp LG(V)     &copilot_chat &p_view  &none     &none     &generate_code
-=======
-            &kp N1      &kp N3     &kp N5     &kp N7    &kp N9         &gradle     &none      &none      &none     &class_hierarchy
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ 2        │  4       │  6       │  8       │ 0        │   │          │          │          │          │          │
-            &kp N2      &kp N4     &kp N6     &kp N8    &kp N0         &bookmarks  &cmd_lb    &none      &cmd_rb   &show_usages
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ ALL      │  COPY    │  CUP     │ BACK     │ PASTE    |   │          │          │          │          │          │
-            &kp LG(A)   &kp LG(C)  &kp LG(X) &kp LG(Z)  &kp LG(V)     &copilot_chat &none      &none      &none    &generate_code
->>>>>>> 6589203741e6e5b48a30ed9d400cfd65b12255e4
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none       &none       &debug_continue &debu_resumen
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯  
