@@ -59,6 +59,7 @@ name: name##_hold_tap {                       \
         // Positional hold-tap for Shift
         HOLD_TAP(lst, balanced, SHIFT_TAP_MS, hold-trigger-key-positions = <R_KEYS>;)
         HOLD_TAP(rst, balanced, SHIFT_TAP_MS, hold-trigger-key-positions = <L_KEYS>;)
+        COMBO(layer5, &mo 5, 31 33)
     };
 };
 
@@ -277,7 +278,7 @@ name: name##_macro {                      \
         //│ `        │  +       │  -       │  %       │  *       │   │          │          │          │          │          │
            &kp GRAVE   &kp PLUS   &kp MINUS  &kp PRCNT   &kp ASTRK   &kp K_VOL_DN   &none      &none     &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             ________   ________       &kp LG(TAB)  ________
+                                             ________   ________       &kp LG(TAB) &kp CAPSLOCK
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

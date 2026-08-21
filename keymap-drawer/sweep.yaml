@@ -174,4 +174,4 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - Gui+↹
-  - {t: ▽, type: trans}
+  - CAPSLOCK
